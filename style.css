@@ -8,120 +8,141 @@ html{
     font-family:'Raleway', sans-serif;
     font-size:20px;
     font-weight:300;
-    color:#666;
+    color:#fff;
     background-color:#fff;
     text-rendering:optimizeLegibility;
     overflow:hidden;
+}
+.row{
+    max-width:1240px;
+    margin:0 auto;
 }
 .group:after{
     content:"";
     display:table;
     clear:both;
 }
-header{
-    height:100vh;
-    background-image:linear-gradient(rgba(0, 0, 0, 0.45),rgba(0, 0, 0, 0.45)),url("screenshots/pexels-photo-210602.jpeg");
-    background-size:cover;
-    background-position:center bottom;
-    background-attachment:fixed;
-    position:relative;
+
+.wrap{
+    background-color:#34495e;
+    height:75px;
 }
-.top-bar{
-    border-bottom:1px solid rgba(255, 255, 255, 0.70);
+.logo{
+    font-size:115%;
+    margin:20px 0 1% 0 !important;
+    color:#ecf0f1;
+    padding-left:20px;
 }
-.logo-box{
-    float:left;
-    padding:25px 0 30px 8%;
-    color:#fff;
-    width:30%;
-    border-right:1px solid rgba(255, 255, 255, 0.70);
+.box{
+    display:inline-block;
+    margin-right:40px;
+    margin-top:5px;
+    float:right;
 }
-.logo-box h3{
+.box:nth-child(3):after{
+    content:"";
+    height:35px;
+    width:1px;
+    display:inline-block;
+    background-color:#fff;
+    transform:translate(10px,5px);
+}
+.box:nth-child(2):after{
+    content:"";
+    height:35px;
+    width:1px;
+    display:inline-block;
+    background-color:#fff;
+    transform:translate(10px,5px);
+}
+.box div{
+    display:inline-block;
+    font-size:80%;
+}
+.box div p{
+    text-transform:uppercase;
+    color:#ecf0f1;
+    font-size:84%;
+    margin-bottom:3px;
+}
+span{
+    color:#e67e22;
+    font-weight:500;
+}
+.icon-contact{
+    font-size:190%;
+    color:#ecf0f1;
+    margin-right:10px;
+    vertical-align:top;
     cursor:pointer;
 }
-.main-nav{
-    float:right;
-    list-style:none;
-    padding:25px 30px 0 8%;
-    width:70%;
-    text-align:right;
+.icon-contact:hover{
+    color:#bdc3c7;
 }
-.main-nav li {
+header{
+    height:100vh;
+    background-image:linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)),url("screenshots/pexels-photo-29596%20(1).jpg");
+    background-size:cover;
+    background-position:center top;
+    position:relative;
+}
+.nav{
+    background-color:#ecf0f1;
+}
+.main-nav{
+    width:55%;
+    margin:0 auto;
+    list-style:none;
+    text-align:left;
+    padding:15px 0;
+}
+.main-nav li{
     display:inline-block;
-    margin-right:25px;
+    margin-left:45px;
 }
 .main-nav li a:link,
 .main-nav li a:visited{
     text-decoration:none;
-    color:#ecf0f1;
-    font-size:65%;
+    color:#34495e;
+    font-size:75%;
+    font-weight:500;
+    padding:5px;
     text-transform:uppercase;
-    font-weight:600;
-    transition:color .1s ease-in-out;
-    padding:10px;
 }
 .main-nav li a:hover,
 .main-nav li a:active{
-    color:#fff;
+    color:#bdc3c7;
 }
 .hero-text-box{
-    width:80%;
     position:absolute;
     top:50%;
     left:50%;
     transform:translate(-50%,-50%);
+    width:1140px;
+    padding:0 2%;
 }
 h1{
-    color:#fff;
-    font-size:300%;
-    font-weight:300;
     text-transform:uppercase;
-    margin-bottom:55px;
-}
-.hero-text-box p{
-    color:#ecf0f1;
-    margin-bottom:45px;
-    display:none;
-}
-.btn:link,
-.btn:visited{
-    padding:10px 30px;
-    margin-right:40px;
-    text-decoration:none;
-    border-radius:2px;
+    font-size:250%;
+    font-weight:400;
+    letter-spacing:1px;
+    word-spacing:3px;
+    margin-bottom:30px;
 }
 .btn-full:link,
 .btn-full:visited{
-    color:#ecf0f1;
-    background-color:#1abc9c;
-    border:2px solid #1abc9c;
-    transition:border 0.2s ease-out, background-color 0.2s ease-out, color 0.2s ease-out;
+    text-decoration:none;
+    color:#fff;
+    padding:10px 20px;
+    background-color:#e67e22;
+    border:1px solid #e67e22;
+    border-radius:3px;
+    transition:border .2s ease-out, background-color .2s ease-out;
 }
 .btn-full:hover,
 .btn-full:active{
-    background-color:#16a085;
-    border:2px solid #16a085;
-}
-.btn-ghost:link,
-.btn-ghost:visited{
-    border:2px solid #1abc9c;
-    color:#1abc9c;
-    background-color:rgba(255, 255, 255, 0.1);
-    transition:border 0.2s ease-out, background-color 0.2s ease-out, color 0.2s ease-out;
-}
-.btn-ghost:hover,
-.btn-ghost:active{
-    background-color:#16a085;
-    border:2px solid #16a085;
-    color:#fff;
-}
-.mobile-nav-icon{
-    float:right;
-    margin-top:30px;
-    display:none;
-    cursor:pointer;
-    color:#fff;
-    font-size:200%;
+    background-color:#d35400;
+    border:1px solid #d35400;
 }
 
 
