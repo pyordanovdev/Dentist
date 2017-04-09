@@ -1,0 +1,127 @@
+
+
+/* black #34495e;
+/* vivid #ecf0f1 */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+html{
+    color:#555;
+    font-size:20px;
+    font-family:'Raleway',sans-serif;
+    font-weight:400;
+    text-rendering:optimizeLegibility;
+    background-color:#fff;
+    overflow:hidden;
+}
+.group:after{
+    content:"";
+    display:table;
+    clear:both;
+}
+.row{
+    max-width:1140px;
+    margin:0 auto;
+}
+.wrap-one{
+    background-color:#34495e;
+}
+.box{
+    float:right;
+    margin:15px 30px 15px 0;
+}
+.box div{
+    display:inline-block;
+    font-size:80%;
+}
+.box div p{
+    text-transform:uppercase;
+    color:#ecf0f1;
+    font-size:84%;
+    margin-bottom:3px;
+}
+span{
+    color:#e67e22;
+    font-weight:500;
+}
+.icon-contact{
+    font-size:190%;
+    color:#ecf0f1;
+    margin-right:10px;
+    vertical-align:top;
+    cursor:pointer;
+}
+.icon-contact:hover{
+    color:#bdc3c7;
+} 
+.wrap-two{
+    background-color:#ecf0f1;
+}
+.logo{
+    float:left;
+    padding:15px 0 15px 15px;
+}
+.main-nav{
+    padding:15px 30px 15px 0;
+    float:right;
+    list-style:none;
+}
+.main-nav li{
+    display:inline-block;
+    margin-left:45px;
+}
+.main-nav li a:link,
+.main-nav li a:visited{
+    text-decoration:none;
+    color:#34495e;
+    text-transform:uppercase;
+    font-size:78%;
+    font-weight:500;
+}
+.main-nav li a:hover,
+.main-nav li a:active{
+    color:#bdc3c7;
+}
+.hero-text-box{
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-50%);
+    padding:0 2%;
+    width:1140px;
+}
+h1{
+    text-transform:uppercase;
+    color:#ecf0f1;
+    font-size:250%;
+    font-weight:400;
+    letter-spacing:1px;
+    word-spacing:3px;
+    margin-bottom:40px;
+}
+.btn-full:link,
+.btn-full:visited{
+    text-decoration:none;
+    color:#fff;
+    padding:10px 20px;
+    background-color:#e67e22;
+    border:1px solid #e67e22;
+    border-radius:3px;
+    transition:border .2s ease-out, background-color .2s ease-out;
+}
+.btn-full:hover,
+.btn-full:active{
+    background-color:#d35400;
+    border:1px solid #d35400;
+}
+header{
+    height:100vh;
+    background-image:linear-gradient(rgba(0, 0, 0, 0.55),rgba(0, 0, 0, 0.55)),url("screenshots/pexels-photo-29596%20(1).jpg");
+    background-size:cover;
+    background-position:center top;
+    position:relative;
+}
+
