@@ -385,5 +385,81 @@ h4:after{
 
 /* SECTION - Testimonials */
 
+.testimonials{
+    list-style:none;
+    margin-top:10px;
+    overflow:hidden;
+}
+.testimonials li{
+    float:left;
+    width:33.33%;
+    height:197px;
+    padding:20px 20px 20px;
+}
+.testi-box{
+    
+    
+}
+.img-person{
+    float:left;
+    width:22%;
+}
+.img-person img{
+    width:63px;
+    height:63px;
+    border-radius:50%;
+    display:block;
+}
+.content{
+    width:78%;
+    float:left;
+    color:#555;
+}
+.content p{
+    font-size:70%;
+    font-weight:400;
+    font-style:italic;
+    margin-bottom:10px;
+    font-family: 'Merriweather', serif;
+    line-height:1.8;
+}
+.content p:before{
+    content: '"';
+    font-size:80%;
+    font-weight:bold;
+}
+.content p:after{
+    content: '"';
+    font-size:80%;
+    font-weight:bold;
+}
+.person{
+    font-weight:600;
+    text-transform:uppercase;
+    font-size:80%;
+}
+.testimonials li:nth-child(1){
+    border-right:1px dashed rgb(212, 212, 212);
+}
+.testimonials li:nth-child(2){
+    border-right:1px dashed rgb(212, 212, 212);
+}
+.testimonials li:nth-child(4){
+    border-right:1px dashed rgb(212, 212, 212);
+    border-top:1px dashed rgb(212,212,212);
+}
+.testimonials li:nth-child(5){
+    border-right:1px dashed rgb(212, 212, 212);
+    border-top:1px dashed rgb(212,212,212);
+}
+.testimonials li:nth-child(6){
+    border-top:1px dashed rgb(212,212,212);
+}
+.cite{
+    display:block;
+    font-size:65%;
+    color:#959595;
+    
+}
 
 
