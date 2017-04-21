@@ -1,168 +1,389 @@
-/* ---------------------*/
-/*     BASIC SETUP      */
-/* ---------------------*/
+/* color #1 - #e04622
+color #2 orange - #e67e22 */
+
+/* BASIC SETUP */
 *{
-    padding:0;
     margin:0;
+    padding:0;
     box-sizing:border-box;
 }
 html{
-    font-family:'Raleway', sans-serif;
-    font-size:20px;
-    font-weight:300;
-    color:#fff;
     background-color:#fff;
+    color:#222;
+    font-family:'Raleway', sans-serif;
+    font-weight:300;
     text-rendering:optimizeLegibility;
-    overflow:hidden;
-}
-.row{
-    max-width:1240px;
-    margin:0 auto;
+    font-size:20px;
+    overflow:auto;
 }
 .group:after{
-    content:"";
+    content:" ";
     display:table;
     clear:both;
 }
-/* ---------------------*/
-/*       TOP BAR        */
-/* ---------------------*/
-.wrap{
-    background-color:#34495e;
-    height:75px;
-}
-.logo{
-    font-size:115%;
-    margin:20px 0 1% 0 !important;
-    color:#ecf0f1;
-    padding-left:20px;
-}
-.box{
-    display:inline-block;
-    margin-right:40px;
-    margin-top:5px;
-    float:right;
-}
-.box:nth-child(3):after{
-    content:"";
-    height:35px;
-    width:1px;
-    display:inline-block;
-    background-color:#fff;
-    transform:translate(15px,5px);
-}
-.box:nth-child(2):after{
-    content:"";
-    height:35px;
-    width:1px;
-    display:inline-block;
-    background-color:#fff;
-    transform:translate(15px,5px);
-}
-/* ---------------------*/
-/*      INSIDE DIVS     */
-/* ---------------------*/
-
-.box div{
-    display:inline-block;
-    font-size:80%;
-}
-.box div p{
-    text-transform:uppercase;
-    color:#ecf0f1;
-    font-size:84%;
-    margin-bottom:3px;
-}
-span{
-    color:#e67e22;
-    font-weight:500;
-}
-.icon-contact{
-    font-size:190%;
-    color:#ecf0f1;
-    margin-right:10px;
-    vertical-align:top;
-    cursor:pointer;
-}
-.icon-contact:hover{
-    color:#bdc3c7;
-} 
-/* ---------------------*/
-/*       HEADER         */
-/* ---------------------*/
-header{
-    height:100vh;
-    background-image:linear-gradient(rgba(0, 0, 0, 0.55),rgba(0, 0, 0, 0.55)),url("screenshots/pexels-photo-29596%20(1).jpg");
-    background-size:cover;
-    background-position:center top;
-    position:relative;
-}
-.nav{
-    background-color:#ecf0f1;
-}
-.main-nav{
-    width:55%;
+.row{
+    max-width:1150px;
     margin:0 auto;
-    list-style:none;
-    text-align:left;
-    padding:15px 0;
 }
-.main-nav li{
+section{padding:60px 0;}
+/* HEADER */
+.logo{
+    float:left;
+    padding:20px 1%;
+    border-right:1px solid rgba(255, 255, 255, 0.60);
+    color:#fff;
+    min-width:25%;
+    text-align:center;
+}
+.logo h1{
+    cursor:pointer;
+    text-transform:none;
+    font-weight:bold;
+    text-transform:uppercase;
+    color:#e67e22;
+    font-size:150%;
+}
+.logo h4:after{display:none;}
+
+.main-nav{
+    list-style:none;
+    float:right;
+    position:relative;
+    padding:25px 1% 0px;
+}
+.main-nav li {
     display:inline-block;
-    margin-left:45px;
+    margin-left:25px;
 }
 .main-nav li a:link,
 .main-nav li a:visited{
     text-decoration:none;
-    color:#34495e;
-    font-size:75%;
-    font-weight:500;
-    padding:5px;
+    font-size:70%;
     text-transform:uppercase;
+    font-weight:500;
+    color:#222;
+    transition:color 200ms ease-in-out;
 }
 .main-nav li a:hover,
 .main-nav li a:active{
-    color:#bdc3c7;
+    color:#d35400;
 }
-/* ---------------------*/
-/*       TOP BAR        */
-/* ---------------------*/
+
+.dropdown-nav{
+    list-style:none;
+    position:absolute;
+    background-color:#fff;
+    border-radius:1px;
+    z-index:2;
+}
+.dropdown-nav li{
+    display:none;
+    padding:7px 30px 15px 20px;
+    margin:0;
+    border-bottom:1px solid rgba(0, 0, 0, 0.30);
+}
+.dropdown-nav li a:link,
+.dropdown-nav li a:visited{
+    color:#000;
+    text-transform:none;
+    transition:color 200ms ease-in-out;
+}
+.dropdown-nav li a:hover,
+.dropdown-nav li a:active{
+    color:#e67e22;
+}
+li:hover > .dropdown-nav li {
+    display:block;
+    animation-name:example;
+    animation-duration:400ms;
+}
+.icon-drop{
+    margin-left:10px;
+}
+@keyframes example{
+    0% {padding:0px 30px 0px 20px;}
+    100% {padding:7px 30px 15px 20px;}
+}
+header{
+    height:100vh;
+    background-image:linear-gradient(rgba(0, 0, 0, 0.2),rgba(0, 0, 0, 0.2)),url("screenshots/fireplace-mantel-living-room-cozy-christmas-xmas.jpg");
+    background-size:cover;
+    background-position:center center;
+    background-attachment:fixed;
+    position:relative;
+}
+.wrap{
+    background-color:#fff;
+}
+.hero-text-box{
+    width:460px;
+    position:absolute;
+    top:30%;
+    left:8%;
+}
+.hero-text-box h1{
+    padding:20px;
+    background-color:rgba(38, 38, 40, 0.85);
+    color:#fff;
+    border-bottom:2px solid #e67e22;
+    padding:25px;
+    text-transform:uppercase;
+    font-size:160%;
+    letter-spacing:2px;
+    word-spacing:2px;
+    line-height:145%;
+}
+.hero-text-box div{
+    padding:25px 25px 60px 25px;
+    background-color:rgba(38, 38, 40, 0.45);
+}
+.long-copy{
+    color:#fff;
+    font-size:88%;
+    margin-bottom:35px;
+    font-weight:300;
+    line-height:145%;
+}
+
+
+/*
 .hero-text-box{
     position:absolute;
     top:50%;
     left:50%;
     transform:translate(-50%,-50%);
-    padding:0 2%;
-    width:1140px;
+    min-width:80%;
+    padding:25px 2%;
+    z-index:1;
 }
 h1{
+    font-size:270%;
     text-transform:uppercase;
-    font-size:250%;
-    font-weight:400;
-    letter-spacing:1px;
+    color:#fff;
+    font-weight:300;
     word-spacing:3px;
-    margin-bottom:30px;
+    margin-bottom:10px;
+    letter-spacing:1px;
 }
+.long-copy{
+    color:#fff;
+    word-spacing:3px;
+    letter-spacing:1px;
+    font-size:105%;
+    font-weight:300;
+    margin-bottom:60px;
+}*/
 .btn-full:link,
 .btn-full:visited{
     text-decoration:none;
-    color:#fff;
-    padding:10px 20px;
     background-color:#e67e22;
+    color:#fff;
     border:1px solid #e67e22;
-    border-radius:3px;
-    transition:border .2s ease-out, background-color .2s ease-out;
-    box-shadow:2px 3px #d35400;
+    padding:10px 30px;
+    border-radius:200px;
+    margin-right:25px;
+    margin-top:25px;
+    text-transform:uppercase;
+    font-size:85%;
 }
 .btn-full:hover,
 .btn-full:active{
     background-color:#d35400;
     border:1px solid #d35400;
+    transition:color 250ms ease-in-out,border 250ms ease-in-out, background-color 250ms ease-in-out;
+}
+/*
+.btn-ghost:link,
+.btn-ghost:visited{
+    text-decoration:none;
+    background-color:rgba(255, 255, 255, 0.05);
+    color:#e04622;
+    padding:10px 30px;
+    border-radius:200px;
+    border:1px solid #e04622;
+}
+.btn-ghost:hover,
+.btn-ghost:active{
+    background-color:#c74122;
+    border:1px solid #e04622;
+    color:#fff;
+    transition:background-color 250ms ease-in-out,border 250ms ease-in-out, color 250ms ease-in-out;
+}
+*/
+
+/* SECTION - About us */
+
+
+.section-about{
+    box-shadow:0px 2px 1px #c3c3c3;
+}
+.section-about h4:after{
+    content:"";
+    display:none;
+    height:2px;
+    width:40px;
+    background-color:#e67e22;
+    margin:20px auto;
+}
+h2{
+    margin-bottom:45px;
+    text-transform:uppercase;
+    letter-spacing:2px;
+    word-spacing:2px;
+    text-align:center;
+    font-weight:500;
+}
+h2:after{
+    content:"";
+    display:block;
+    height:2px;
+    width:65px;
+    background-color:#e67e22;
+    margin:15px auto 0 auto;
+}
+.paragraph-support{
+    margin-left:10%;
+    text-align:center;
+    width:80%;
+    font-size:85%;
+    margin-bottom:60px;
+    font-weight:400;
+    line-height:145%;
+}
+.btn-contact:link,
+.btn-contact:visited{
+    text-decoration:none;
+    padding:10px 20px;
+    border:1px solid #e67e22;
+    color:#e67e22;
+    border-radius:200px;
+}
+.btn-contact:hover,
+.btn-contact:active{
+    background-color:#d35400;
+    border:1px solid #d35400;
+    color:#fff;
+    transition:background-color 250ms ease-in-out,border 250ms ease-in-out, color 250ms ease-in-out;
+}
+
+.box-about{
+    padding:10px 2%;
+}
+.img-about{
+    width:100%;
+    float:right;
+    height:auto;
+    border-radius:20%;
+}
+.about-details{
+    margin-bottom:45px;
+}
+.about-details div{
+    display:inline-block;
+    float:left;
+    height:75px;
+    width:75px;
+    text-align:center;
+    padding-top:10px;
+    border-radius:50%;
+    border:1px solid #d9d9d9;
+    margin-right:35px;
+    padding-top:14px;
+}
+.about-details p{
+    font-size:72%;
+    padding-left:10px;
+    color:#444;
+    line-height:145%;
+}
+.icon-small{
+    font-size:180%;
+    color:#e67e22;
+    vertical-align:middle;
 }
 
 
+/* SECTION - Services */
 
 
+.section-services{
+    background-color:#f2f2f2;
+    padding-bottom:100px;
+}
+.section-services h2{text-align:center;}
+.section-services h2:after{margin:15px auto;}
+.paragraph-services{
+    margin:0 auto;
+    width:70%;
+    text-align:center;
+    font-weight:400;
+    margin-bottom:50px;
+}
+.service-img{
+    width:100%;
+    height:250px;
+    margin-bottom:10px;
+}
+.box{
+    text-align:center;
+    min-height:450px;
+    padding:10px 1.5%;
+    box-shadow:2px 2px 1px #e0e0e0;
+    background-color:#fff;
+}
+h4{
+    text-transform:uppercase;
+    font-weight:500;
+    margin-bottom:10px;
+    letter-spacing:0.2px;
+    word-spacing:2px;
+}
+h4:after{
+    content:"";
+    display:block;
+    height:2px;
+    width:45px;
+    background-color:#e67e22;
+    margin:20px auto;
+}
+.box p{
+    font-size:85%;
+    line-height:145%;
+}
+.box-services{
+    text-align:center;   
+}
+.btn-box:link,
+.btn-box:visited{
+    padding:16px 23px 15px;
+    position:relative;
+    top:40px;
+    text-decoration:none;
+    border:2px solid #e67e22;
+    background-color:#e67e22;
+    color:#fff;
+    border-radius:200px;
+    font-weight:700;
+    font-size:80%;
+    text-transform:uppercase;
+    transition:background-color 250ms ease-in-out, color 250ms ease-in-out;
+    word-spacing:2px;
+}
+.btn-box:hover,
+.btn-box:active{
+    background-color:#fff;
+    color:#222;
+}
+.service-img:hover{
+    opacity:0.8;
+    cursor:pointer;
+} 
+.box h4:hover{
+    color:#888;
+    cursor:pointer;
+}
+
+/* SECTION - Testimonials */
 
 
 
