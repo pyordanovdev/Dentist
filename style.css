@@ -106,7 +106,7 @@ li:hover > .dropdown-nav li {
 }
 header{
     height:100vh;
-    background-image:linear-gradient(rgba(0, 0, 0, 0.2),rgba(0, 0, 0, 0.2)),url("screenshots/fireplace-mantel-living-room-cozy-christmas-xmas.jpg");
+    background-image:linear-gradient(rgba(0, 0, 0, 0.2),rgba(0, 0, 0, 0.2)),url("screenshots/fireplace-reduced.jpg");
     background-size:cover;
     background-position:center center;
     background-attachment:fixed;
