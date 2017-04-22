@@ -502,7 +502,7 @@ h4:after{
     width:75px;
     height:75px;
     border-radius:50%;
-    border:1px solid #d8d8d8;
+    border:1px solid #e67e22;
     margin-right:15px;
     text-align:center;
     padding-top:13px;
@@ -597,7 +597,7 @@ footer{
 }
 .social-nav li a:link,
 .social-nav li a:visited{
-    padding: 17px;
+    padding: 14px;
     background-color:#e67e22;
     border:2px solid #e67e22;
     color:#fff;
@@ -611,5 +611,9 @@ footer p{
     clear:both;
     text-align:center;
     margin-top:50px;
+}
+.company{
+    color:#888;
+    font-size:120%;
 }
 
