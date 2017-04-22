@@ -14,7 +14,122 @@
     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.css">
     <link href="Supplementary/grid.css" type="text/css" rel="stylesheet">
     <link href="queries.css" type="text/css" rel="stylesheet">
-    
+    <style>
+        .logo{
+    float:left;
+    padding:20px 1%;
+    text-align:center;
+}
+.logo h1{
+    cursor:pointer;
+    font-weight:bold;
+    text-transform:uppercase;
+    color:#e67e22;
+    font-size:150%;
+}
+.logo h4:after{display:none;}
+
+.main-nav{
+    list-style:none;
+    float:right;
+    position:relative;
+    padding:25px 1% 0px;
+}
+.main-nav li {
+    display:inline-block;
+    margin-left:25px;
+}
+.main-nav li a:link,
+.main-nav li a:visited{
+    text-decoration:none;
+    font-size:70%;
+    text-transform:uppercase;
+    font-weight:500;
+    color:#222;
+    transition:color 200ms ease-in-out;
+}
+.main-nav li a:hover,
+.main-nav li a:active{
+    color:#d35400;
+}
+
+.dropdown-nav{
+    list-style:none;
+    position:absolute;
+    background-color:#fff;
+    border-radius:1px;
+    z-index:2;
+}
+.dropdown-nav li{
+    display:none;
+    padding:7px 30px 15px 20px;
+    margin:0;
+    border-bottom:1px solid rgba(0, 0, 0, 0.30);
+}
+.dropdown-nav li a:link,
+.dropdown-nav li a:visited{
+    color:#000;
+    text-transform:none;
+    transition:color 200ms ease-in-out;
+}
+.dropdown-nav li a:hover,
+.dropdown-nav li a:active{
+    color:#e67e22;
+}
+li:hover > .dropdown-nav li {
+    display:block;
+    animation-name:example;
+    animation-duration:400ms;
+}
+.icon-drop{
+    margin-left:10px;
+}
+@keyframes example{
+    0% {padding:0px 30px 0px 20px;}
+    100% {padding:7px 30px 15px 20px;}
+}
+header{
+    height:100vh;
+    background-image:linear-gradient(rgba(0, 0, 0, 0.4),rgba(0, 0, 0, 0.4)),url("screenshots/fireplace-reduced.jpg");
+    background-size:cover;
+    background-position:center center;
+    background-attachment:fixed;
+    position:relative;
+}
+.wrap{
+    background-color:#fff;
+}
+.hero-text-box{
+    width:460px;
+    position:absolute;
+    top:30%;
+    left:8%;
+}
+.hero-text-box h1{
+    padding:20px;
+    background-color:rgba(38, 38, 40, 0.85);
+    color:#fff;
+    border-bottom:2px solid #e67e22;
+    padding:25px;
+    text-transform:uppercase;
+    font-size:160%;
+    letter-spacing:2px;
+    word-spacing:2px;
+    line-height:145%;
+}
+.hero-text-box div{
+    padding:25px 25px 40px 25px;
+    background-color:rgba(38, 38, 40, 0.45);
+}
+.long-copy{
+    color:#fff;
+    font-size:88%;
+    margin-bottom:30px;
+    font-weight:300;
+    line-height:145%;
+}
+
+    </style>
     </head>
 <body>
     <header>
@@ -41,7 +156,7 @@
                 </ul>
             </nav>
         </div>
-        <div class="hero-text-box animated fadeInUp">
+        <div class="hero-text-box animated rubberBand">
             <h1 draggable="false">Quality chimney & Fireplace Repair</h1>
             <div>
                 <p draggable="false" class="long-copy">We keep it clean and professional, with over twenty years in experience, to provide you with service unmatched by our competitors.</p>
