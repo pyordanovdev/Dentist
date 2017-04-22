@@ -14,7 +14,7 @@ html{
     font-weight:300;
     text-rendering:optimizeLegibility;
     font-size:20px;
-    overflow:auto;
+    overflow-x:hidden;
 }
 .group:after{
     content:" ";
@@ -30,14 +30,10 @@ section{padding:60px 0;}
 .logo{
     float:left;
     padding:20px 1%;
-    border-right:1px solid rgba(255, 255, 255, 0.60);
-    color:#fff;
-    min-width:25%;
     text-align:center;
 }
 .logo h1{
     cursor:pointer;
-    text-transform:none;
     font-weight:bold;
     text-transform:uppercase;
     color:#e67e22;
@@ -662,12 +658,13 @@ hr{
 }
 .services-list li{
     list-style: none;
-    padding-top: 6px;
-    padding-bottom: 6px;
+    padding-top: 10px;
+    padding-bottom: 10px;
     font-family: 'Raleway',sans-serif;
     font-size: 70%;
-    line-height: 5px;
+    line-height: 1.2;
     padding-left:10px;
+    margin-bottom:5px;
     border: none;
     color:#ecf0f1;
 }
