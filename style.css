@@ -185,8 +185,8 @@ section
 header
 {
 	height:100vh;
-	background-image:-webkit-linear-gradient(rgba(0,0,0,0.42),rgba(0,0,0,0.42)),url(screenshots/pexels-photo-110055.jpeg);
-	background-image:linear-gradient(rgba(0,0,0,0.43),rgba(0,0,0,0.43)),url(screenshots/pexels-photo-110055.jpeg);
+	background-image:-webkit-linear-gradient(rgba(0,0,0,0.40),rgba(0,0,0,0.40)),url("screenshots/pexels-photo-110055-min.jpeg");
+	background-image:linear-gradient(rgba(0,0,0,0.40),rgba(0,0,0,0.40)),url("screenshots/pexels-photo-110055-min.jpeg");
 	background-size:cover;
 	background-position:center 80%;
 	background-attachment:fixed;
@@ -408,8 +408,12 @@ h2:after
     border-radius:3px;
 }
 .box:hover{
+    -webkit-transform:translateY(-10px);
     transform:translateY(-10px);
+    -webkit-transition:-webkit-transform 350ms ease-in-out;
+    transition:-webkit-transform 350ms ease-in-out;
     transition:transform 350ms ease-in-out;
+    transition:transform 350ms ease-in-out, -webkit-transform 350ms ease-in-out;
     box-shadow:2px 2px 3px #c1c1c1;
 }
 
@@ -858,12 +862,17 @@ hr
 }
 .portfolio-box img{
     width:100%;
+    -webkit-transform:scale(1.15);
     transform:scale(1.15);
     opacity:0.80;
     height:230px;
 }
 .portfolio-box img:hover{
+    -webkit-transform:scale(1.05);
     transform:scale(1.05);
+    -webkit-transition:-webkit-transform 500ms ease-in-out;
+    transition:-webkit-transform 500ms ease-in-out;
     transition:transform 500ms ease-in-out;
+    transition:transform 500ms ease-in-out, -webkit-transform 500ms ease-in-out;
     opacity:1;
 }
