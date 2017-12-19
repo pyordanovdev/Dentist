@@ -37,7 +37,7 @@ section
 .logo
 {
 	float:left;
-	padding:12px 1%;
+	padding:25px 1% 25px;
 	text-align:center;
 }
 
@@ -46,7 +46,7 @@ section
 	cursor:pointer;
 	font-weight:700;
 	color:#e67e22;
-	font-size:200%;
+	font-size:100%;
     text-transform:uppercase;
 }
 
