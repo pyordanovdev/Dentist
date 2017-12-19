@@ -162,7 +162,7 @@
 
 @media only screen and (max-width:833px) {
     .hero-text-box{
-        top:18%;
+        margin-top:85px;
 }
     .hero-text-box h1{
         font-size:270%;
@@ -290,7 +290,7 @@
 
 @media only screen and (max-width:460px) {
        .hero-text-box{
-         top:18%;
+         margin-top:70px;
 }
     .hero-text-box h1{
         font-size:240%;
@@ -330,5 +330,7 @@
         width:100%;
         height:300px;
 }
-	
+    .btn-ghost, .btn-full{
+        display:none;
+    }
 }
