@@ -37,8 +37,7 @@ section
 .logo
 {
 	float:left;
-	padding:25px 1% 10px;
-	padding:25px 1% 25px;
+	padding:25px 1% 25px !important;
 	text-align:center;
 }
 
