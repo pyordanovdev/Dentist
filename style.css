@@ -67,7 +67,6 @@ section
 	font-size:90%;
 	word-spacing:2px;
 	letter-spacing:1px;
-    text-transform:uppercase;
 }
 
 .sticky .logo
@@ -899,3 +898,4 @@ hr
     transition:transform 500ms ease-in-out, -webkit-transform 500ms ease-in-out;
     opacity:1;
 }
+
